@@ -7,7 +7,7 @@ import Post from './pages/Post'
 import Layout from './Layout';
 import Users from './Users'
 import User from './User';
-
+import Siparis from './pages/Siparis';
 function App() {
   return (
     <BrowserRouter>
@@ -18,7 +18,8 @@ function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:postId" element={<Post />} />
           <Route path="users" element={<Users />} />
-          <Route path="users/:id" element={<User />} />
+          <Route path="user/:id" element={<User />} />
+          <Route path="siparislerim" element={<Siparis />}/>
         </Route>
       </Routes>
     </BrowserRouter>

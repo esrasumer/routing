@@ -1,9 +1,8 @@
-import { NavLink, Outlet } from "react-router-dom"
-
+import { NavLink, Outlet } from "react-router-dom";
 function Layout() {
     return (
         <div>
-            <Outlet />
+
             <nav>
                 <ul>
                     <li>
@@ -16,11 +15,14 @@ function Layout() {
                         <NavLink style={({ isActive }) => ({ color: isActive ? "red" : "pink" })} to="about">About</NavLink>
                     </li>
                     <li>
-                         <NavLink style={({isActive}) => ({ color: isActive ? "red" : "pink"})} to="user">Users</NavLink>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "red" : "pink" })} to="users">Users</NavLink>
+                    </li>
+                    <li>
+                        <NavLink style={({ isActive }) => ({ color: isActive ? "red" : "pink" })} to="siparislerim">Siparislerim</NavLink>
                     </li>
                 </ul>
             </nav>
-
+            <Outlet />
         </div>
     )
 }
