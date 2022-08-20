@@ -5,7 +5,8 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Post from './pages/Post'
 import Layout from './Layout';
-
+import Users from './Users'
+import User from './User';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:postId" element={<Post />} />
+          <Route path="users" element={<Users />} />
+          <Route path="users/:id" element={<User />} />
         </Route>
       </Routes>
     </BrowserRouter>

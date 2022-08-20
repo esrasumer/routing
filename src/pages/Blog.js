@@ -1,7 +1,7 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Blog() {
-    return(
+    return (
         <div>
             <h1>Blog</h1>
             <ul>
